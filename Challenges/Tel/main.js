@@ -1,10 +1,30 @@
-const buttonList = document.querySelectorAll('input[type=button]');
+function tocaSom(selecAudio){
+    const element = document.querySelector(selecAudio);
 
-const inputTel = document.querySelector('input[type=tel]');
+    if(element && element.localName === 'audio'){
+        element.play();
+    } else {
+        console.log('Elemento não encontrado ou seletor inválido')
+    }
+}
+const buttonList = document.querySelectorAll('.button');
 
-for (let indice = 0; indice < listaDeTeclas.length; indice++) {
-    const tecla = buttonList[indice];
+for(let index = 0; index < buttonList.length; index ++){
+
+    const tecla = buttonList[index];
+    const teclado = tecla.classList[1];
+    const idAudio = `#som_${teclado}`; 
+
     tecla.onclick = function () {
-        inputTel.value = inputTel.value + tecla.value;
+        tocaSom(idAudio);
+    }
+
+    tecla.onkeydown = function (event) {
+        if (event.code === 'Space' || event.code === 'Enter'){
+            tecla.classList.add('ativa')
+        };
+    }
+    tecla.onkeyup = function () {
+        tecla.classList.remove ('ativa')
     }
 }
