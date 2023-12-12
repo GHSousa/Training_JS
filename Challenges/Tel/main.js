@@ -9,7 +9,7 @@ function tocaSom(selecAudio){
 }
 const buttonList = document.querySelectorAll('.button');
 
-for(let index = 0; index < buttonList.length; index ++){
+for (let index = 0; index < buttonList.length; index ++){
 
     const tecla = buttonList[index];
     const teclado = tecla.classList[1];
