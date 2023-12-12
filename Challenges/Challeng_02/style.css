@@ -16,7 +16,7 @@ body {
 }
 
 .container1 {
-    margin: 10%;
+    margin: 10% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +28,9 @@ strong {
 
 .container1__content {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .container1__title {
@@ -45,15 +48,21 @@ strong {
     justify-content: space-between;
 }
 
-a {
+button {
     background-color: #22d4fd;
-    width: 280px;
+    width: 200px;
     text-align: center;
     font-weight: 600;
     border-radius: 16px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
+    border-style: none;
     color: #000;
     font-family: 'Montserrat', sans-serif;
+}
+
+.container1_img {
+    display: flex;
+    margin: 15% 10%;
 }
