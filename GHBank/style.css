@@ -32,11 +32,10 @@
 button{
     text-align: center;
     width: 80px;
-    height: 40px;
+    height: 50px;
     margin: 5px;
     border-radius: 15px;
     border-color: black;
-    box-shadow: hwb(hue white black);
 }
 .B_deposito{
     background-color: green;
