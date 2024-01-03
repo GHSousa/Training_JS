@@ -29,10 +29,22 @@
     flex-direction: column;
 }
 
-.B_deposito {
+button{
+    text-align: center;
+    width: 80px;
+    height: 40px;
     margin: 5px;
-    border-radius: 5px;
-    color: green;
+    border-radius: 15px;
 }
+.B_deposito{
+    background-color: green;
+    color: wheat;
+}
+
+.B_saque {
+    background-color: red;
+    color: white;
+}
+
 
 
