@@ -14,22 +14,25 @@
     flex-flow: column wrap;
     align-items: center;
     margin-top: -100px;
-    background-color: lightblue;
 }
 
 .container_2 {
-    display:flexbox;
-    justify-content: center;
-    background-color: lightgreen;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
 }
 
-.deposito,
-.saldo,
-.saque{
+#deposito,
+#saldo,
+#saque {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
-
+.B_deposito {
+    margin: 5px;
+    border-radius: 5px;
+    color: green;
+}
 
 
