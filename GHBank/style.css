@@ -35,15 +35,19 @@ button{
     height: 40px;
     margin: 5px;
     border-radius: 15px;
+    border-color: black;
+    box-shadow: hwb(hue white black);
 }
 .B_deposito{
     background-color: green;
-    color: wheat;
+    color: white;
+    font-weight: bolder;
 }
 
 .B_saque {
     background-color: red;
     color: white;
+    font-weight: bolder;
 }
 
 
