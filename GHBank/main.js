@@ -1,9 +1,6 @@
-let saldo = "00,00"       
-       
-       // Certifique-se de que o script seja executado após o carregamento do DOM
+let saldo = 0   
         document.addEventListener('DOMContentLoaded', function () {
-            // Atualize o conteúdo da span com o valor do saldo
-            document.getElementById('saldoValor').textContent = saldo;
+        document.getElementById('saldoValor').textContent = saldo;
         });
 
         function realizarDeposito() {
@@ -12,3 +9,15 @@ let saldo = "00,00"
             saldo += valorDeposito;
             document.getElementById('saldoValor').textContent = saldo;
         }     
+
+        function realizaSaque() {
+            let valorSaque = document.getElementById('valorSaque').value;
+            valorSaque = parseFloat(valorSaque);
+
+            if(valorSaque <= saldo){
+                saldo -= valorSaque;
+                document.getElementById('saldoValor').textContent = saldo;
+            } else {
+                alert("Voce não tem saldo suficiente pra realizar um saque! Faça primeiro um deposito")
+            }
+        }
