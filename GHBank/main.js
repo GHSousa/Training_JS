@@ -7,7 +7,7 @@ let saldo = "00,00"
         });
 
         function realizarDeposito() {
-            var valorDeposito = document.getElementById('valorDeposito').value;
+            let valorDeposito = document.getElementById('valorDeposito').value;
             valorDeposito = parseFloat(valorDeposito);
             saldo += valorDeposito;
             document.getElementById('saldoValor').textContent = saldo;
