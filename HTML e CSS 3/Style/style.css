@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: #000000;
+    border: 2px solid #22D4FD;
+    width: 380px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__link:hover{
+    cursor: pointer;
+    background-color: #272727;
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.imagem__perfil {
+    max-width: 65%;
+    border-radius: 50%;
+    border: 4px solid #22D4FD;
+}
+
+.rodape{
+    text-align: center;
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
