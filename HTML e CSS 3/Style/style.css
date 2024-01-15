@@ -22,7 +22,7 @@ body{
 
 .cabecalho__menu__link{
     font-family: Montserrat, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color:#22D4FD;
     text-decoration: none;
@@ -43,7 +43,7 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Krona One', sans-serif;
 }
 
@@ -52,7 +52,7 @@ body{
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 28px;
+    font-size: 1.7rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,7 +64,7 @@ body{
     align-items: center;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -73,7 +73,7 @@ body{
     width: 380px;
     text-align: center;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -89,12 +89,14 @@ body{
 .imagem{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    align-self: flex-start;
+    gap: 2rem;
 }
 
+
 .imagem__perfil {
-    max-width: 85%;
+    width: 75%;
     border-radius: 50%;
     border: 4px solid #22D4FD;
 }
@@ -105,6 +107,6 @@ body{
     color: #000000;
     background-color: #22D4FD;
     font-family: Montserrat, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
