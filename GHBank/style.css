@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 /*.container_0{
     display: flex;
     justify-content: center;
@@ -27,6 +31,50 @@
 #saque {
     display: flex;
     flex-direction: column;
+}
+
+.modal{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.40s ease-in-out, transform 0.40s ease-in-out, opacity 0.40s ease-in-out;
+}
+
+.modal-content{
+    background-color: white;
+    padding: 16px 24px;
+    width: 600px;
+    border-radius: 0.5rem;
+}
+
+.modal-span{
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 24px;
+
+}
+
+.modal-span:hover {
+    background-color: darkgray;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
 }
 
 button{
