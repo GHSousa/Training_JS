@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -15,48 +15,49 @@ body{
     padding: 2% 0 0 10%;
 }
 
-.cabecalho__menu{
+.cabecalho__menu {
     display: flex;
     gap: 80px;
 }
 
-.cabecalho__menu__link{
+.cabecalho__menu__link {
     font-family: Montserrat, sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color:#22D4FD;
+    color: #22D4FD;
     text-decoration: none;
 }
 
-.apresentacao{
+.apresentacao {
     padding: 2% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     align-items: center;
 }
-.apresentacao__conteudo{
-    width: 615px;
+
+.apresentacao__conteudo {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.apresentacao__conteudo__titulo{
+.apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: 'Krona One', sans-serif;
 }
 
-.titulo-destaque{
+.titulo-destaque {
     color: #22D4FD;
 }
 
-.apresentacao__conteudo__texto{
+.apresentacao__conteudo__texto {
     font-size: 1.7rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-.apresentacao__links{
+.apresentacao__links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,13 +65,13 @@ body{
     align-items: center;
 }
 
-.apresentacao__links__navegacao{
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     background-color: #000000;
     border: 2px solid #22D4FD;
-    width: 380px;
+    width: 50%;
     text-align: center;
     border-radius: 10px;
     font-size: 1.5rem;
@@ -81,12 +82,12 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__link:hover {
     cursor: pointer;
     background-color: #272727;
 }
 
-.imagem{
+.imagem {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +102,7 @@ body{
     border: 4px solid #22D4FD;
 }
 
-.rodape{
+.rodape {
     text-align: center;
     padding: 24px;
     color: #000000;
