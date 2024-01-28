@@ -90,6 +90,7 @@ body {
 .imagem {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-self: flex-start;
     gap: 2rem;
@@ -97,8 +98,10 @@ body {
 
 
 .imagem__perfil {
-    width: 75%;
-    border-radius: 50%;
+    display: flex;
+    gap: 100px;
+    width: 65%;
+    border-radius: 50%; 
     border: 4px solid #22D4FD;
 }
 
@@ -110,4 +113,23 @@ body {
     font-family: Montserrat, sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10% ;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .imagem{
+        align-self:normal
+    }
+    .imagem__perfil{
+        justify-content: center;
+        width: 50%;
+    }
 }
