@@ -101,7 +101,7 @@ body {
     display: flex;
     gap: 100px;
     width: 65%;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: 4px solid #22D4FD;
 }
 
@@ -115,21 +115,31 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1200px){
-    .cabecalho{
-        padding: 10% ;
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
     }
-    .cabecalho__menu{
+
+    .cabecalho__menu {
         justify-content: center;
     }
-    .apresentacao{
+
+    .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
     }
-    .imagem{
-        align-self:normal
+
+    .apresentacao__conteudo {
+        width: auto;
     }
-    .imagem__perfil{
+
+    .imagem {
+        align-self: normal
+    }
+
+    .imagem__perfil {
         justify-content: center;
         width: 50%;
     }
+
 }
